@@ -102,7 +102,7 @@ struct Boxy<T> {
 }
 ```
 
-will have its data1 and data2's fields destructors whenever it "would" be
+will have the destructors of its `data1` and `data2` fields called whenever it "would" be
 dropped, even though it itself doesn't implement Drop. We say that such a type
 *needs Drop*, even though it is not itself Drop.
 
